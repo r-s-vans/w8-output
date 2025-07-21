@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 20px;
+    background-color: #222; /* 背景の暗い色 */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 縦方向の中央揃え */
+    align-items: center;/* 横方向の中央揃え */
+    flex-wrap: wrap;
+    min-height: 100vh;
+    gap: 30px; /* 要素間のスペース */
+
+}
+
+.grid-wrapper {
+    display: flex;
+    flex-direction: column; /* 縦方向に並べる */
+    align-items: center; /* 中央揃え */
+    gap: 30px; /* 要素間のスペース */
+}
+
+
+.grid-container {
+    background-color: #333; /* ボタンの背景より少し濃い色 */
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap; /* 要素を折り返す */
+    gap: 20px; /* 要素間のスペース */
+    max-width: 550px; /* 全体の最大幅を制限 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.grid-container2 {
+    background-color: #333; /* ボタンの背景より少し濃い色 */
+    padding: 15px; /* 全体のパディングを調整 */
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap; /* 要素を折り返す */
+    gap: 40px; /* 要素間のスペース */
+    /* ここで幅を固定して、常に2列になるようにする */
+    width: calc(120px * 2 + 15px * 3); /* ボタン幅*2 + gap*3 (左右と中央) */
+    /* 599.5px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.grid-container3 {
+    background-color: #333; /* ボタンの背景より少し濃い色 */
+    padding: 15px; /* 全体のパディングを調整 */
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap; /* 要素を折り返す */
+    gap: 25px; /* 要素間のスペース */
+    /* ここで幅を固定して、常に2列になるようにする */
+    width: calc(140px * 6 + 10px * 1); /* ボタン幅*2 + gap*3 (左右と中央) */
+    /* 599.5px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item {
+    background-color: #9333ea; /* 紫色 */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 120px; /* 幅を固定 */
+    height: 60px; /* 高さを固定 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+}
+
+
+.grid-item2 {
+    background-color: #9333ea; /* 紫色 */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 120px; /* 各ボタンの固定幅 */
+    height: 60px; /* 各ボタンの固定高さ */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+}
+.grid-item3 {
+    background-color: #9333ea; /* 紫色 */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 80px; /* 各ボタンの固定幅 */
+    height: 60px; /* 各ボタンの固定高さ */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+}
+
+.grid-item.large {
+    width: calc(120px * 2 + 15px);
+}
